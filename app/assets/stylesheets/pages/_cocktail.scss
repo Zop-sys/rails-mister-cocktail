@@ -1,0 +1,44 @@
+
+#overlay {
+  background: #e97171;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#cocktail {
+  max-width: 350px;
+  text-align: center;
+  padding: 30px 30px 12px 30px;
+  color: #f5efef;
+  background-color: #810000;
+  border: 4px solid #ffcb8e;
+  border-radius: 5px;
+  margin: 250px;
+  padding: inherit;
+}
+#cocktail h1 {
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+#cocktail img {
+  max-width: 300px;
+  border: 6px solid #f5efef;
+  border-radius: 150px;
+}
+#cocktail ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cocktail li {
+  padding: 15px 0;
+  font-size: 18px;
+  color: #f5efef;
+}
+#cocktail li:not(:last-of-type) {
+  border-bottom: 1px solid #f5efef;
+}
+

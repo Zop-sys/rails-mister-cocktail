@@ -5,6 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
+
+puts "Cleaning database..."
+Dose.destroy_all
+Ingredient.destroy_all
+
+
+lemon = {name: "lemon"}
+ice = {name: "ice"}
+mint = {name: "mint leaves"}
+
+[lemon, ice, mint].each do |attributes|
+  ingred = Ingredient.create!(attributes)
+  puts "Created #{ingred.name}"
+end

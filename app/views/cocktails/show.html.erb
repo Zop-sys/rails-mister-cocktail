@@ -1,4 +1,23 @@
-<h1> <%= @cocktail.name %></h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <div id="cocktail">
+    <h1> <%= @cocktail.name %></h1>
+    <img src='https://source.unsplash.com/400x300/?drink,#{@cocktail.name}'>
+    <li> <%= @dose.description %> </li>
+    <td> <%=link_to "Ajoute une dose",new_cocktail_dose_path(@cocktail) %></td>
+    <td><%= link_to 'Destroy', @cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <p> <%= link_to "Retourner à la liste de tous les cocktails", cocktails_path %></p>
+  </div>
+  <div id="overlay">
+
+  </div>
+</body>
+</html>
+
 
 
 
